@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor de Video MP4</title>
+    <link rel="stylesheet" href="/2/peliculas.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Videos</h1>
+    </div>
+    <div id="container">
+        <div id="video-menu" class="menu-video">
+            <h2>Selecciona un video:</h2>
+            <ul>
+                <li><a id="video1" data-video-src="/2/For You.mp4">For You</a></li>
+                <li><a id="video2" data-video-src="/2/4Ever.mp4">4Ever</a></li>
+                <li><a id="mas_videos">Más Videos</a></li>
+                <li><a id="add_video">Añadir Video</a></li>
+                <!-- Agregar más items de Menú aquí -->
+            </ul>
+        </div>
+        <div id="video-container" class="video-container">
+            <video id="video" controls></video>
+        </div>
+    </div>
+    <div id="c_archivo" class="c_archivo">
+        <div class="c_archivo-content">
+            <div><img class="carga_archivo" src="/2/carga_archivo.png" alt="Carga_Archivo"></div>
+            <input type="file" id="video-file" accept=".mp4">
+            <button id="cargarVideo">Cargar Video</button>
+            <button id="cerrarc_archivo">Cerrar</button>
+        </div>
+    </div>
+    <div id="mas_v" class="mas_v">
+    <div class="mas_v-content">
+        <h2>Lista de Videos</h2>
+        <ul>
+
+        </ul>
+        <button id="cerrarmas_v">Cerrar</button>
+    </div>
+    <script src="/2/peliculas.js" defer></script>
+</body>
+</html>
