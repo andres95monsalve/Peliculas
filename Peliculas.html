@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Reproductor de Video MP4</title>
-    <link rel="stylesheet" href="CSS/peliculas.css">
+    <link rel="stylesheet" href="src/CSS/peliculas.css">
 </head>
 <body>
     <div class="titulo">
@@ -13,8 +13,8 @@
         <div id="video-menu" class="menu-video">
             <h2>Selecciona un video:</h2>
             <ul>
-                <li><a id="video1" data-video-src="video.mp4">Example_1</a></li>
-                <li><a id="video2" data-video-src="video.mp4">Example_2</a></li>
+                <li><a id="video1" data-video-src="src/Videos/video1.mp4">Example_1</a></li>
+                <li><a id="video2" data-video- src="src/Videos/video2.mp4">Example_2</a></li>
                 <li><a id="mas_videos">Más Videos</a></li>
                 <li><a id="add_video">Añadir Video</a></li>
                 <!-- Agregar más items de Menú aquí -->
@@ -26,7 +26,7 @@
     </div>
     <div id="c_archivo" class="c_archivo">
         <div class="c_archivo-content">
-            <div><img class="carga_archivo" src="/Imagenes/carga_archivo.png" alt="Carga_Archivo"></div>
+            <div><img class="carga_archivo" src="src/Imagenes/carga_archivo.png" alt="Carga_Archivo"></div>
             <input type="file" id="video-file" accept=".mp4">
             <button id="cargarVideo">Cargar Video</button>
             <button id="cerrarc_archivo">Cerrar</button>
@@ -40,6 +40,6 @@
         </ul>
         <button id="cerrarmas_v">Cerrar</button>
     </div>
-    <script src="/JavaScript/peliculas.js" defer></script>
+    <script src="src/JavaScript/peliculas.js" defer></script>
 </body>
 </html>
